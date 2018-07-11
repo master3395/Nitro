@@ -15,13 +15,3 @@ Bot().then(bot => {
     require('./functions/specialHelp')
     bot.login(config.token)
 }).catch(err => console.log(err));
-
-var http = require("http");
-
-setInterval(function() {
-
-http.get("https://NewsTargetedCom.herokuapp.com");
-
-}, 300000); // every 5 minutes (300000)
-  
-});
